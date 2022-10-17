@@ -400,6 +400,7 @@ svg{
 }
 .comp-card a:hover{
     color: var(--con-color);
+    cursor: pointer;
 }
 .comp-list{
     display: flex;
@@ -453,6 +454,7 @@ svg{
 .contact .email:hover{
     color: var(--con-text-color);
     transition: 0.25s;
+    cursor: pointer;
 }
 /* <<----   Contact Me Page ---->> */
 /* Responsive */
