@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <script src="card.js"></script>
+    <title>Home Rush Projects :3</title>
+    <script>
+      document.addEventListener("mousemove", parallax);
+      function parallax(event) {
+      this.querySelectorAll(".card").forEach((shift) => {
+      const position = shift.getAttribute("value");
+      const x = (window.innerWidth - event.pageX * position) / 90;
+      const y = (window.innerHeight - event.pageY * position) / 90;
+
+      shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  });
+}
+    </script>
+</head>
+<body>
+  <div class="card" value="-0.5">
+        <div class="card_background_img"></div>
+        <div class="card_profile_img"></div>
+        <div class="user_details">
+            <h3>Thepbordin</h3>
+            <p style="margin:1.1rem">tjaiinso</p>
+        </div>
+        <div class="card_count">
+           <a class="" href="./Portfolio-FU/index.html"><div class="btn">Go To Page</div></a>
+        </div>
+    </div>
+    <div class="card" value="1.5">
+      <div class="card_background_img_1"></div>
+      <div class="card_profile_img_1"></div>
+      <div class="user_details">
+          <h3>Tanapat</h3>
+          <p style="margin:1.1rem">Tachamte</p>
+      </div>
+      <div class="card_count">
+        <a class="" href="./Portfolio-P/index.html"><div class="btn">Go To Page</div></a>
+      </div>
+  </div>  
+</body>
+</html>

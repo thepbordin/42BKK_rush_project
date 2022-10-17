@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Minecraft-font;
+  src: url(./Portfolio-P/assets/fonts/Minecraft.ttf);
+  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+  );
+  background-size: 150% 300%;
+
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #33363b;
+}
+
+p{
+  font-size: 14px;
+  color: #868d9b;
+}
+
+.card {
+  width: 360px;
+  height: auto;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 80px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+  display:inline-block;
+  border-radius: 2rem;
+  font-family: Minecraft-font;
+}
+.card:hover{
+  background-color: rgb(220, 218, 218);
+  box-shadow: #868d9b 5px 10px;
+}
+
+.card_profile_img {
+  width: 120px;
+  height: 120px;
+  background-color: #868d9b;
+  background: url("https://avatars.githubusercontent.com/u/19200037?v=4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 120px;
+  margin: 0 auto;
+  margin-top: -60px;
+
+}
+
+.card_background_img {
+  width: 100%;
+  height: 180px;
+  background-color: #e1e7ed;
+  background: url("https://i.pinimg.com/originals/6a/e9/34/6ae9348c427e3bdf6d874a84e8c2eedc.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+
+}
+
+.card_profile_img_1 {
+  width: 120px;
+  height: 120px;
+  background-color: #868d9b;
+  background: url("https://avatars.githubusercontent.com/u/91345773?v=4");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #ffffff;
+  border-radius: 120px;
+  margin: 0 auto;
+  margin-top: -60px;
+
+}
+
+.card_background_img_1 {
+  width: 100%;
+  height: 180px;
+  background-color: #e1e7ed;
+  background: url("https://i.pinimg.com/originals/d1/e7/ea/d1e7ea2ec87e31946a094ec66f66724d.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+
+}
+
+.user_details p {
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.user_details h3 {
+  margin-top: 10px;
+}
+
+.card_count {
+  padding: 30px;
+  border-top: 1px solid #dde1e7;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.count p {
+  margin-top: -10px;
+}
+
+.btn {
+  padding: 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #24c5a1;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  color:black;
+  animation: rainbow-bg 2s infinite ;
+}
+
+@keyframes rainbow-bg{
+  100%,0%{
+    background-color: rgb(255,0,0);
+  }
+  8%{
+    background-color: rgb(255,127,0);
+  }
+  16%{
+    background-color: rgb(255,255,0);
+  }
+  25%{
+    background-color: rgb(127,255,0);
+  }
+  33%{
+    background-color: rgb(0,255,0);
+  }
+  41%{
+    background-color: rgb(0,255,127);
+  }
+  50%{
+    background-color: rgb(0,255,255);
+  }
+  58%{
+    background-color: rgb(0,127,255);
+  }
+  66%{
+    background-color: rgb(0,0,255);
+  }
+  75%{
+    background-color: rgb(127,0,255);
+  }
+  83%{
+    background-color: rgb(255,0,255);
+  }
+  91%{
+    background-color: rgb(255,0,127);
+  }
+}
